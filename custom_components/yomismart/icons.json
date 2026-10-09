@@ -1,0 +1,16 @@
+{
+  "integration": {
+    "default": "mdi:home"
+  },
+  "entity": {
+    "binary_sensor": {
+      "washer_state": {
+        "default": "mdi:washing-machine",
+        "state": {
+          "off": "mdi:washing-machine-off",
+          "on": "mdi:washing-machine"
+        }
+      }
+    }
+  }
+}

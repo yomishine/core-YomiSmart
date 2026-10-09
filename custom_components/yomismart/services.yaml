@@ -1,0 +1,31 @@
+cancel_alarm:
+  name: 取消洗衣完成报警
+  description: 向指定洗衣机发送取消当前报警和洗衣流程的命令。
+  fields:
+    sn:
+      name: 设备序列号
+      description: YomiSmart 洗衣机的设备序列号。
+      required: true
+      example: "3C8A1F48D009"
+      selector:
+        text:
+
+set_volume:
+  name: 设置设备音量
+  description: 向断电设备发送音量设置命令。
+  fields:
+    sn:
+      name: 设备序列号
+      description: YomiSmart 设备序列号。
+      required: true
+      selector:
+        text:
+    level:
+      name: 音量等级
+      description: 0 到 3 的音量等级。
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 3
+          mode: slider

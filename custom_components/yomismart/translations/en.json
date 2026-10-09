@@ -1,0 +1,35 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_account%]",
+      "wrong_account": "The authorization code belongs to a different YomiSmart account."
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "init": {
+        "data": {
+          "code": "Authorization code (xxx-xxx)"
+        },
+        "description": "Enter the one-time authorization code shown in the YomiSmart app."
+      },
+      "reauth_confirm": {
+        "data": {
+          "code": "Authorization code (xxx-xxx)"
+        },
+        "description": "YomiSmart needs a new authorization code.",
+        "title": "[%key:common::config_flow::title::reauth%]"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "wash_cycle": {
+        "name": "Washer state"
+      }
+    }
+  }
+}
